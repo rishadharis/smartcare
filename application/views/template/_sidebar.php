@@ -9,33 +9,33 @@
             </div>
 
             <ul class="list-unstyled components">
-                <li>
+                <li <?php echo $type=='dashboard'?'class="active"':'';?>>
                     <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="fas fa-desktop"></i>
                         <span class="togname">Home<span>
                     </a>
                     <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li><a href="/project/indosatdesign/dashboard.html">Dashboard</a></li>
+                        <li <?php echo $type=='dashboard'?'class="active"':'';?>><a href="<?= base_url();?>">Dashboard</a></li>
                         <li><a href="#">Home 2</a></li>
                         <li><a href="#">Home 3</a></li>
                     </ul>
                 </li>
-                <li>
+                <li <?php echo $type=='traffic-monitoring' || $type=='special-area'?'class="active"':'';?>>
                     <a href="#monitoringmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="fas fa-align-justify"></i>
                         <span class="togname">Monitoring<span>
                     </a>
                     <ul class="collapse list-unstyled" id="monitoringmenu">
-                        <li><a href="/project/indosatdesign/traffic-monitoring.html">Traffic Monitoring</a></li>
-                        <li><a href="/project/indosatdesign/special-area.html">Special Area</a></li>
+                        <li <?php echo $type=='traffic-monitoring'?'class="active"':'';?>><a href="<?= base_url('traffic-monitoring');?>">Traffic Monitoring</a></li>
+                        <li <?php echo $type=='special-area'?'class="active"':'';?>><a href="<?= base_url('special-area');?>">Special Area</a></li>
                     </ul>
-                <li class="active"><a href="#reportmenu" data-toggle="collapse" aria-expanded="false">
+                <li <?php echo $type=='network-availability'?'class="active"':'';?>><a href="#reportmenu" data-toggle="collapse" aria-expanded="false">
                         <i class="fa fa-file"></i>
                         <span class="togname">Report<span>
                     </a>
                 </li>
                 <ul class="collapse list-unstyled" id="reportmenu">
-                    <li class="active"><a href="/project/indosatdesign/network-availability.html">Network
+                    <li <?php echo $type=='network-availability'?'class="active"':'';?>><a href="<?= base_url('network-availability');?>">Network
                             Availability</a></li>
                 </ul>
                 </li>

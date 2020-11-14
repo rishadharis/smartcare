@@ -23,7 +23,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
+// $config['base_url'] = 'http://localhost/github/smartcare/';
 $config['base_url'] = 'http://114.7.170.30:8000/';
+
 /*
 |--------------------------------------------------------------------------
 | Index File

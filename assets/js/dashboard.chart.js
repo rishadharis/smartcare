@@ -117,9 +117,6 @@ function voiceerlang(players) {
         }
     });
 }
-d3
-  .csv("http://localhost/Core_KQI_daily_tot_20201028.csv")
-  .then(voiceerlang);
 $(document).ready(function(){
     d3.csv("Core_KQI_daily_tot_20201028.csv").then(function(data) {
         // console.log(data[0]);
@@ -228,10 +225,6 @@ function vlrsubscriber(players) {
         }
     });
 }
-d3
-  .csv("http://localhost/Core_KQI_daily_tot_20201028.csv")
-  .then(vlrsubscriber);
-
 //line
 // var ctxL3 = document.getElementById("lineChart3").getContext('2d');
 var myLineChart3 = new Chart('lineChart3', {

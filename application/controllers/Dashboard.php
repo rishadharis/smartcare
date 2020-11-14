@@ -27,15 +27,33 @@ class Dashboard extends CI_Controller {
 	public function index()
 	{
 		$data = array(
-			'title'=>'Dashboard'
+            'title'=>'Dashboard',
+            'type'=>'dashboard'
 		);
 		$this->load->view('dashboard', $data);
 	}
 	public function traffic_monitoring()
 	{
 		$data = array(
-			'title'=>'Traffic Monitoring'
+            'title'=>'Traffic Monitoring',
+            'type'=>'traffic-monitoring'
 		);
 		$this->load->view('traffic_monitoring', $data);
-	}
+    }
+    public function special_area()
+    {
+        $data = array(
+            'title'=>'Special Area',
+            'type'=>'special-area'
+        );
+        $this->load->view('special_area',$data);
+    }
+    public function network_availability()
+    {
+        $data = array(
+            'title'=>'Network Availability',
+            'type'=>'network-availability'
+        );
+        $this->load->view('network_availability',$data);
+    }
 }
